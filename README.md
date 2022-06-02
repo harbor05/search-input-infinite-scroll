@@ -1,4 +1,4 @@
-# **search-input-infinite-scroll**
+# **Search-Input-Infinite-Scroll**
 
 ### **Contents**
 
@@ -25,7 +25,7 @@
 └──
 ```
 
-- Might be need settings(`settings.json`) for using Tailwind CSS syntax at `./styles/globals.css`
+- Might be need settings(`settings.json`) for using Tailwind CSS syntax at `./styles/global.css`
 
 </br>
 
