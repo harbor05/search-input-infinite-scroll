@@ -13,6 +13,7 @@
 
 - Infinite Scroll for Search Input
 - React, Typescript
+- tailwindcss
 - [MSW(Mock Service Worker)](https://mswjs.io/) for Mocking
 
 </br>
@@ -25,7 +26,7 @@
 └──
 ```
 
-- Might be need settings(`settings.json`) for using Tailwind CSS syntax at `./styles/global.css`
+- might be need settings(`settings.json`) for using Tailwind CSS syntax at `./styles/global.css`
 
 </br>
 
