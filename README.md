@@ -12,7 +12,8 @@
 ### **Meta Information**
 
 - Infinite Scroll for Search Input
-- React, Typescript
+- React
+- Typescript
 - tailwindcss
 - [MSW(Mock Service Worker)](https://mswjs.io/) for Mocking
 
