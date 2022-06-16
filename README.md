@@ -23,7 +23,8 @@
 
 ```bash
 ├── src/
-│   └── components/
+│   ├── components/
+│   └── mock/
 └──
 ```
 
