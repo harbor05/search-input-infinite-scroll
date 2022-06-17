@@ -10,10 +10,12 @@ export const handlers = [
     const todoList: Array<string> = responses.todoList.data;
     const query = req.url.searchParams.get("q"); // 검색 단어
     const page = req.url.searchParams.get("page"); // 페이지 번호
-    const limit = req.url.searchParams.get("limit"); // 결과의 최대 길이 값(array length)
+    const limit = req.url.searchParams.get("limit"); // 각 페이지의 사이즈
 
     /**
      * 배열 안에서 일치하는 문자열을 찾아서 배열로 반환
+     * @description
+     * 대소문자 구분 무시
      * @param {Array} array init array
      * @param {String} query string for search
      * @returns {Array} filtered results
@@ -25,6 +27,7 @@ export const handlers = [
       );
     };
 
+    // 필수 parameter가 들어오지 않은 경우에 대한 에러처리
     let data: object = {
       opcode: 200,
       query: query,
