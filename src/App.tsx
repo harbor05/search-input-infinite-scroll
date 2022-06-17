@@ -1,20 +1,28 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useEffect } from "react";
+import FetchManager from "./utils/fetchManager";
 
 function App() {
-  useEffect(() => {
-    fetch("/todos")
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-  }, []);
+  // [테스트] 투두 리스트 조회
+  const getTodoList = async () => {
+    let params = { q: "maecenas", page: "1", limit: "10" };
+    try {
+      let res = await FetchManager.fetch("get", "/search", params);
+      console.log("return", res);
+    } catch (error) {
+      console.log("error", error);
+    }
+  };
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Start
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick={getTodoList}
+        >
+          Request
         </button>
       </header>
     </div>
