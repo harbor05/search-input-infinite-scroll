@@ -24,7 +24,13 @@
 ```bash
 ├── src/
 │   ├── components/
-│   └── mock/
+│   ├── mock/
+│   │   ├── rest/
+│   │   │   ├── data/
+│   │   │   ├── handlers.tsx
+│   │   │   └── index.tsx
+│   ├── styles/
+│   └── utils/
 └──
 ```
 
